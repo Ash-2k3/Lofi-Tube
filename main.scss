@@ -8,10 +8,38 @@ $main-font: 'Poppins', sans-serif;
 }
 
 body{
+         background: linear-gradient(.75turn, rgb(26, 25, 25), 90%, rgb(189, 189, 236));
          min-height: 100vh;
          font: 100% $main-font;
 }
 
 body .container{
+        min-height: 100vh;
+        min-width: 100vh;
+}
+
+.navigation-menu{
+         text-transform: uppercase;
+         background-color: black;
+         height: 75px;
+         
          display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0.5em; 
+        width: inherit;
+         height: inherit;
+         
+         a{
+                  text-decoration: none;
+                  font-size: 1.3em;
+         }
+
+         .options{
+                  margin-left: 10px;
+         }
+
+         ul.nav-menu a{
+                  margin-right: 20px;
+         }
 }
