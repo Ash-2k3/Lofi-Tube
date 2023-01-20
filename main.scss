@@ -8,9 +8,13 @@ $main-font: 'Poppins', sans-serif;
 }
 
 body{
-         background: linear-gradient(.75turn, rgb(26, 25, 25), 90%, rgb(189, 189, 236));
+         min-width: 100vh;
+         background: rebeccapurple;
          min-height: 100vh;
+         background-size: contain;
+         background-repeat: no-repeat;
          font: 100% $main-font;
+         
 }
 
 body .container{
@@ -27,7 +31,7 @@ body .container{
          justify-content: space-between;
          align-items: center;
          padding: 0.5em; 
-        width: inherit;
+         width: inherit;
          height: inherit;
          
          a{
@@ -41,5 +45,27 @@ body .container{
 
          ul.nav-menu a{
                   margin-right: 20px;
+         }
+}
+
+.main{
+         padding: 1em;
+         min-height: 80vh;
+         display: flex;
+         justify-content: space-evenly;
+         
+         .left-pannel{
+                  display: inline-block;
+                  min-width: 8%;
+                   border: 1px solid;
+                   height: inherit;
+                   
+         }
+
+         .main-panel{
+                  display: inline-block;
+                  flex-grow: 2;
+                  border: 1px solid;
+                  margin-left: 5px;
          }
 }

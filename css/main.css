@@ -5,8 +5,11 @@
 }
 
 body {
-  background: linear-gradient(0.75turn, rgb(26, 25, 25), 90%, rgb(189, 189, 236));
+  min-width: 100vh;
+  background: rebeccapurple;
   min-height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
   font: 100% "Poppins", sans-serif;
 }
 
@@ -35,6 +38,25 @@ body .container {
 }
 .navigation-menu ul.nav-menu a {
   margin-right: 20px;
+}
+
+.main {
+  padding: 1em;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main .left-pannel {
+  display: inline-block;
+  min-width: 8%;
+  border: 1px solid;
+  height: inherit;
+}
+.main .main-panel {
+  display: inline-block;
+  flex-grow: 2;
+  border: 1px solid;
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
